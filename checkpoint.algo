@@ -1,0 +1,41 @@
+ALGORITHMphrase
+VAR
+    str:string,
+    length: entier 
+BEGIN
+    write("donner une phrase")
+    read(str)
+    length:=str.length
+    write("voici la langeur est",length)
+
+END
+ALGORITHMmots
+VAR
+    vlength:entier
+BEGIN
+write("donner une phrase")
+read(str)
+    FOR i FROM 1 TO str.length STEP step  DO
+        if(str[i]=""){
+            vlength=vlenght+1
+        }
+    END_FOR
+    write("votre phrase contient",vlenght)
+END
+ALGORITHMvoyelles
+VAR
+    vcount:entier
+    vlist="aieuoy"
+    i,j:entier
+BEGIN
+    write("donner une phrase")
+    read(str)
+    FOR i FROM 1 TO str.lenght STEP step  DO
+    FOR j FROM 1 TO vlist.length STEP step  DO
+        if(str[i]=vlist[j]){
+            vcount:=vcount+1
+        }
+    END_FOR
+    END_FOR
+    write("nombre des voyelles est",vcount)
+END
